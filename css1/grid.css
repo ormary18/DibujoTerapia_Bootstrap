@@ -1,0 +1,115 @@
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "sidebar"
+    "main"
+    "section"
+    "mapa"
+    "formulario"
+    "card"
+    "banner2"
+    "banner3"
+    "banner4"
+    "footer"
+    ;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:tomato;
+}
+
+.header{
+    grid-area: header;
+    background-color: none;
+}
+
+.main{
+    grid-area: main;
+    background-image: linear-gradient(yellow,white,orange);
+    
+}
+
+.navbar{
+    grid-area: navbar;
+    background-image: linear-gradient(yellow,white,orange);
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: none;
+}
+
+.section{
+    grid-area: section;
+    background-color: wheat;
+}
+
+.banner2{
+    grid-area: banner2;
+    background-color: wheat;
+}
+
+.mapa{
+    grid-area: mapa;
+    background-color: wheat;
+}
+
+.banner3{
+    grid-area: banner3;
+    background-color: wheat;
+}
+
+.banner4{
+    grid-area: banner4;
+    background-color: wheat;
+}
+
+.formulario{
+    grid-area: formulario;
+    background-color: wheat;
+}
+
+.card{
+  grid-area: card;
+  background-color: wheat;
+}
+
+@media(min-width: 520px){
+    .banner h1{
+      font-size: 30px;
+    }
+    .grid{
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(2,1fr);
+    }
+ 
+  @media(min-width: 600px){
+    .grid-container{
+      grid-template-columns: repeat(auto-fit,minmax(225px, 1fr));
+      grid-auto-flow: dense;
+    }
+
+  }
+
+  @media(min-width: 1024px){
+    .grid-container{
+      grid-template-columns: repeat(auto-fit,minmax(225px, 1fr));
+      grid-auto-flow: dense;
+    }
+
+  }
+
+
+}
