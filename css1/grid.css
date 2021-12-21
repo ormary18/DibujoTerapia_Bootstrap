@@ -26,7 +26,7 @@
 
 .footer{
     grid-area: footer;
-    background-color:tomato;
+    background-color:wheat;
 }
 
 .header{
@@ -36,13 +36,13 @@
 
 .main{
     grid-area: main;
-    background-image: linear-gradient(yellow,white,orange);
+    background-image: linear-gradient(wheat, pink);
     
 }
 
 .navbar{
     grid-area: navbar;
-    background-image: linear-gradient(yellow,white,orange);
+  
 }
 
 .sidebar{
