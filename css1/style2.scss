@@ -1,0 +1,63 @@
+$colorbg: black;
+$widthH1: 100%;  
+@mixin fontStyle {
+    background-image: linear-gradient(wheat, pink);
+    
+}
+
+
+h1{
+    color: $colorbg;
+    @include fontStyle();
+    padding: 15px;
+    width: $widthH1;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+h2{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.hashtag{
+    color: $colorbg;
+    @include fontStyle();
+    font-size: 15px;
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 60px 0;
+
+    li{
+        display: inline-block;
+
+        a{
+            text-decoration: none;
+            color:$colorbg;
+            padding: 20px;
+            @include fontStyle();
+
+        }
+
+    }
+
+}
+
+footer{
+    background-color: white;
+    color: $colorbg;
+    font-size: 15px;
+
+}
+
+.logo-compañia {
+    display: flex;
+    width: 20%;
+    height: 150px;
+    justify-content: left;
+
+}
